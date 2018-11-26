@@ -10,9 +10,9 @@ approximates a Bernoulli. The approximation is determined by the
 temperature parameter. If the temperature is close to 0, the Relaxed 
 Bernoulli becomes discrete with distribution determined by logits/probs. 
 If the temperature goes to inf, the Relaxed Bernoulli puts all mass on the 
-value 0.5. 
+value 0.5 (documentation adapted from Edward library).
 
-The samples from the Relaxed Bernoulliare reparameterize-able, which means that 
+The samples from the Relaxed Bernoulli are reparameterize-able, which means that 
 a sample from the Relaxed Bernoulli can be written as a differentiable transformation 
 of a draw from a base distribution, where the draw from the base distribution 
 doesn't depend on the parameters we want to optimize. It was discovered concurrently by:
