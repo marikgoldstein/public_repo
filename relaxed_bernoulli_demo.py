@@ -70,6 +70,6 @@ for i in range(10000):
         print("_prob is:",_prob)
         print("prob is:",prob)
         print("sample is:",x)
-    loss = (1-x).pow(2).sum()
+    loss = loss_function(x)
     loss.backward()
     optimizer.step()
