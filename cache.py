@@ -6,7 +6,7 @@ import time
 N = 500 #300 #100
 x = np.zeros((1024, 1024), dtype = np.float32)
 
-# write 1000 copies
+# write N copies
 for i in range(N):
     fname = f'zeros_{i}.npy'
     np.save(fname, x)
